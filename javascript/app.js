@@ -25,12 +25,17 @@ console.log("Hello JavaScript");
 
 // + - x %
 
-console.log('ผลบวก =',20+10);
-console.log('ผลลบ = ', 20-10);
-console.log('ผลคูณ = ',20*10);
-console.log('ผลหาร =', 20/10);
-console.log('ผลเศษ = ', 20%10)
-console.log('ผลยกกำลัง = ',20**2);
+// console.log('ผลบวก =',20+10);
+// console.log('ผลลบ = ', 20-10);
+// console.log('ผลคูณ = ',20*10);
+// console.log('ผลหาร =', 20/10);
+// console.log('ผลเศษ = ', 20%10)
+// console.log('ผลยกกำลัง = ',20**2);
 
 
+// && , ||, !
 
+
+let score = 70
+
+console.log(score >=70 && score<=80)
