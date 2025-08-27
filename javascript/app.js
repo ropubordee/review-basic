@@ -36,6 +36,19 @@ console.log("Hello JavaScript");
 // && , ||, !
 
 
-let score = 70
+// let score = 70
 
-console.log(score >=70 && score<=80)
+// console.log(score >=70 && score<=80)
+
+//
+
+// if
+
+age = 10
+
+if(age == 15){
+    console.log('คำนำหน้าเป็นนาย/นางสาว');
+    
+}
+//
+
