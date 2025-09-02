@@ -4,10 +4,10 @@
 .flex-container{
     display: flex;
     background: skyblue;
-    flex-direction: column;
+    flex-direction: row;
     /* flex-wrap: wrap; */
-    justify-content:center;
-    height: 100vh;
+    height: 50vh;
+    align-items: start;
 }
 .item{
     background-color: orange;
@@ -24,6 +24,10 @@
     /* flex-basis: 500px; */
     /* flex-shrink: 2; หุบ */
     /* flex-grow: 2;  ขยาย*/
+    align-self: center;
 
+}
 
+.item-3{
+    align-self: flex-end;
 }
