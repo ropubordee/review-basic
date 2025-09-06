@@ -1,0 +1,77 @@
+/* Targeted Selectors */
+
+/* p{
+    background-color: orange;
+} */
+/* descendant selector */
+/* div p{
+    background-color: greenyellow;
+} */
+
+/* child-selector */
+/* div>p{
+    background-color: yellow;
+} */
+
+/* a{
+    background-color: orange;
+}
+a[target]{
+    background-color: red;
+    color: white;
+}
+a[target='_blank']{
+    background-color: black;
+    color: pink;
+}
+a[target='_self']{
+    color: purple;
+} */
+
+/* input[type='email'],input[type='text']{
+    width: 80%;
+    margin-bottom: 5px;
+}
+input[type='submit']{
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+} */
+
+li {
+  padding: 0.25rem;
+  margin: 0.25rem;
+  list-style: none;
+}
+li:first-child {
+  background-color: red;
+}
+li:last-child {
+  background-color: orange;
+}
+
+
+li:nth-child(3) {
+  background-color: green;
+}
+li:nth-child(4) {
+  background-color: cyan;
+}
+li:nth-child(3n+1){
+    background-color: greenyellow;
+}
+
+/* เลขคี่ */
+li:nth-child(odd){
+    background-color: yellow;
+}
+/* เลขคู่ */
+li:nth-child(even){
+    background-color: cyan;
+}
+
+
+
+li:nth-last-child(4) {
+  background-color: yellow;
+}
