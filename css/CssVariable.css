@@ -1,0 +1,23 @@
+:root {
+  --box: var(--spacing) solid green;
+  --them-color: orange;
+  --shadow: 5px 5px var(--them-color);
+  --spacing: 15px;
+  --font: 40px;
+}
+.box-1 {
+  border: var(--box);
+  background-color: var(--them-color);
+  box-shadow: var(--shadow);
+  margin: var(--spacing);
+  font-size: var(--font);
+}
+.box-2 {
+  border: var(--box);
+  margin: var(--spacing);
+}
+.box-3 {
+  border: var(--box);
+  background-color: var(--them-color);
+  margin: var(--spacing);
+}
