@@ -1,0 +1,22 @@
+body{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.box{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    transition-property: background-color;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
+    transition-delay: 5s;
+    transition: background-color 2s,width 3s ease-in 3s;
+}
+.box:hover{
+    background-color: red;
+    width: 300px;
+    border-radius: 50%;
+}
