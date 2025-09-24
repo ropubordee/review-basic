@@ -99,3 +99,9 @@ console.log(`ผลรวมการบวกเลข =  ${sum}`);
 
 let total = setSalary(15000);
 console.log(`เงืนเดือน+โบนัส = ${total}`);
+
+
+let a = 100;
+
+
+console.log(a);
