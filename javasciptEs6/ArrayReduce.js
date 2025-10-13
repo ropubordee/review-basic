@@ -75,35 +75,48 @@ const summation = data.reduce((value, e) => {
 
 // console.log(totalsByCategory);
 
-
-
 const inventory = [
-  { id: 101, name: 'T-shirt Black', status: 'In Stock' },
-  { id: 102, name: 'Jeans Blue', status: 'In Stock' },
-  { id: 103, name: 'Sweater Red', status: 'Out of Stock' },
-  { id: 104, name: 'Socks Grey', status: 'In Stock' },
-  { id: 105, name: 'Hoodie Blue', status: 'Out of Stock' },
-  { id: 106, name: 'Cap White', status: 'In Stock' }
+  { id: 101, name: "T-shirt Black", status: "In Stock" },
+  { id: 102, name: "Jeans Blue", status: "In Stock" },
+  { id: 103, name: "Sweater Red", status: "Out of Stock" },
+  { id: 104, name: "Socks Grey", status: "In Stock" },
+  { id: 105, name: "Hoodie Blue", status: "Out of Stock" },
+  { id: 106, name: "Cap White", status: "In Stock" },
 ];
 
 const stockCounts = inventory.reduce((accumulator, item) => {
   // 1. ดึงคีย์: ชื่อสถานะ (status)
-  const key = item.status; 
-  
+  const key = item.status;
+
   // 2. ตรวจสอบและกำหนดค่าเริ่มต้น (Initialization)
   // 💡 ตรรกะควรเป็น: ถ้าคีย์นี้ 'ยังไม่เคยมี' (ใช้ !) ให้กำหนดค่าเริ่มต้น
   if (!accumulator[key]) {
     // กำหนดให้ยอดนับเริ่มต้นของสถานะนั้นเป็น 0
-    accumulator[key] = 0; 
+    accumulator[key] = 0;
   }
-  
+
   // 3. นับเพิ่ม (Increment)
   // ไม่ว่าจะเคยมีคีย์นี้หรือไม่ (ถ้ามีก็ใช้ค่าเดิมมาบวกต่อ) ให้บวกเพิ่ม 1 เสมอ
   accumulator[key] = accumulator[key] + 1;
-  
+
   // 4. คืนค่าตัวสะสม
   return accumulator;
-  
 }, {}); // ค่าเริ่มต้นคือ Object เปล่า {}
 
 console.log(stockCounts);
+
+const numbers = [10, 5, 2, 8, 1];
+
+const one = numbers.reduce((value, e) => value + e, 0);
+console.log(one);
+
+const items = ["apple", "banana", "orange", "grape"];
+const two = items.reduce((value, e) => value + 1, 0);
+
+console.log("ข้อ2", two);
+
+const scores = [45, 88, 72, 95, 60];
+const three = scores.reduce((value, e) => {
+  return e > value ? e : value;
+}, 0);
+console.log("ข้อ3", three);
