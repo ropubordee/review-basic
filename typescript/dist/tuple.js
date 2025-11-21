@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const goodStatus = [200, "OK"];
+const notFound = [404, "ไม่พบข้อมูล"];
+const badRequest = [400, "คำขอไม่ถูกต้อง"];
+const serverErrr = [500, "Internal Server Error"];
+console.log(goodStatus);
+console.log(notFound);
+console.log(badRequest);
+console.log(serverErrr);

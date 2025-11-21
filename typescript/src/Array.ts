@@ -1,0 +1,60 @@
+
+const users : string[] = ['ก้อง','โจโจ้']
+
+
+for(let i = 0 ; i< users.length ; i++){
+    console.log(users[i]);
+    
+}
+
+users.forEach(item=>{
+    console.log(item);
+    
+})
+
+console.log(users.length);
+
+const ages : number[] = [18,20,25]
+
+
+
+// Array & TypeAliases
+
+type Employee= {
+    name : string,
+    salary : number,
+    department? : string
+}
+
+const employees : Employee[] =[]
+
+employees.push({name : 'pubordee',salary : 50000, department : 'โปรแกรมเมอร์'})
+employees.push({name : 'โจโจ้',salary : 80000, })
+employees.push({name : 'นัท',salary : 100000, department : 'ฝ่ายขาย' })
+
+
+for(let person of employees){
+    console.log(person);
+    
+}
+
+console.log(employees);
+
+
+
+const section : string[]=['บัญชี','การเงิน']
+const departments : string[] = ['โปรแกรมเมอร์','การตลาด','กราฟิก']
+
+departments.push(...section)
+
+console.log(departments);
+
+
+const total = (...numbers : number[]) : number=>{
+    return numbers.reduce((result,value)=>{
+        return result+value
+    },0)
+}
+
+console.log(total(100,200));
+
